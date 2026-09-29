@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GEMU Surface · SEO &amp; GEO 分析报告 v2</title>
+<style>
+  :root{
+    --bg:#0f1216; --card:#171b21; --card2:#1d222a; --line:#2a313c;
+    --txt:#e7ebf0; --mut:#9aa6b2; --accent:#3da9fc; --good:#2ecc71;
+    --warn:#f4b740; --bad:#ff6b6b; --p0:#ff6b6b; --p1:#f4b740; --p2:#3da9fc; --p3:#9aa6b2;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--txt);line-height:1.65;font-size:15px}
+  .wrap{max-width:1000px;margin:0 auto;padding:32px 20px 80px}
+  h1{font-size:28px;margin:0 0 4px}
+  h2{font-size:21px;margin:42px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+  h3{font-size:17px;margin:26px 0 10px;color:#cfe2f3}
+  .sub{color:var(--mut);margin:0 0 24px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:14px 0}
+  .card.done{border-color:rgba(46,204,113,.35)}
+  .card.todo{border-color:rgba(244,183,64,.35)}
+  .scorecard{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:18px 0}
+  .score{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;text-align:center}
+  .score .n{font-size:34px;font-weight:700}
+  .score .l{color:var(--mut);font-size:13px;margin-top:4px}
+  table{width:100%;border-collapse:collapse;margin:12px 0;font-size:14px}
+  th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--mut);font-weight:600;background:var(--card2)}
+  .pill{display:inline-block;padding:2px 9px;border-radius:999px;font-size:12px;font-weight:700}
+  .p0{background:rgba(255,107,107,.15);color:var(--p0)}
+  .p1{background:rgba(244,183,64,.15);color:var(--p1)}
+  .p2{background:rgba(61,169,252,.15);color:var(--p2)}
+  .p3{background:rgba(154,166,178,.15);color:var(--p3)}
+  .ok{color:var(--good);font-weight:700}
+  .bad{color:var(--bad);font-weight:700}
+  .warn{color:var(--warn);font-weight:700}
+  code{background:#0c0f13;border:1px solid var(--line);border-radius:6px;padding:1px 6px;font-size:13px;color:#9fe0ff}
+  pre{background:#0c0f13;border:1px solid var(--line);border-radius:10px;padding:14px;overflow:auto;font-size:13px;line-height:1.5}
+  .note{font-size:13px;color:var(--mut)}
+  .tag{font-size:12px;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:1px 7px;margin-right:6px;white-space:nowrap}
+  ul{margin:8px 0 8px 2px;padding-left:20px}
+  li{margin:5px 0}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:640px){.scorecard,.grid2{grid-template-columns:1fr}}
+  .ft{color:var(--mut);font-size:12px;margin-top:30px;border-top:1px solid var(--line);padding-top:14px}
+  .banner{background:linear-gradient(180deg,rgba(61,169,252,.10),rgba(61,169,252,0));border:1px solid rgba(61,169,252,.3);border-radius:14px;padding:14px 18px;margin:6px 0 0}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>GEMU Surface 网站 · SEO &amp; GEO 分析报告 <span style="color:var(--accent)">v2</span></h1>
+  <p class="sub">
+    对象：<code>D:\HuaweiMoveData\Users\35266\Desktop\sky的网站</code> ｜ 主文件 <code>index.html</code>（部署源 <code>dist/</code>）<br>
+    v1 生成：2026-09-28 ｜ <b>v2 更新：2026-09-29（本轮收尾）</b>
+  </p>
+
+  <div class="banner">
+    <b>本轮结论：图片路径已 100% 干净，无任何失效引用；SEO / GEO 的「零决策项」已全部落地。</b><br>
+    <span class="note">剩余项均为<b>需要你拍板</b>的业务决策（法务页内容、是否替换素材文件名、是否接入 GA4/GSC），已在第四章集中列出。</span>
+  </div>
+
+  <div class="scorecard">
+    <div class="score"><div class="n" style="color:var(--good)">0 失效</div><div class="l">图片路径<br>（22 个本地引用全通过）</div></div>
+    <div class="score"><div class="n" style="color:var(--good)">≈90</div><div class="l">SEO 健康度<br>（v1 85 → 本轮 +5）</div></div>
+    <div class="score"><div class="n" style="color:var(--good)">≈85</div><div class="l">GEO 就绪度<br>（v1 75 → 本轮 +10）</div></div>
+  </div>
+
+  <!-- ===================== 第一部分 ===================== -->
+  <h2>一、图片路径诊断与修复（任务 1 · 已收尾）</h2>
+
+  <div class="card done">
+    <h3 style="margin-top:4px">诊断结论（v2 复核）</h3>
+    <p>对 <code>index.html</code>、<code>dist/index.html</code>、<code>assets/css/style.css</code>、<code>assets/js/main.js</code> 与 <code>assets/images/</code> 全量交叉校验：</p>
+    <ul>
+      <li><span class="ok">✅ 22 个本地资源引用全部有效</span>——含 18 张渲染图片 + CSS + JS + 图标，零 404、零破图。</li>
+      <li><span class="ok">✅ 注释中的失效路径已清除</span>——v1 遗留的 <code>your-product.webp</code>（磁盘上不存在）已替换为真实存在的 <code>material-pvc.webp</code>，复制示例不再破图。</li>
+      <li><span class="ok">✅ 三处部署副本内容一致</span>——<code>index.html</code>、<code>dist/index.html</code>、<code>dist/.edgeone/assets/index.html</code> 逐字节比对完全相同。</li>
+      <li><span class="ok">✅ 无残留 / 无隐藏引用</span>——<code>dist/assets</code> 下没有源目录已删除的孤儿文件；CSS 无 <code>url()</code> 背景图，JS 无动态注入图片。</li>
+    </ul>
+  </div>
+
+  <div class="card done">
+    <h3 style="margin-top:4px">本轮新增修复</h3>
+    <table>
+      <tr><th>编号</th><th>问题</th><th>处理</th></tr>
+      <tr>
+        <td>F4</td>
+        <td><span class="bad">最后一条失效图片路径</span>：产品预留位说明注释里的示例 <code>src="assets/images/your-product.webp"</code> 指向不存在的文件，将来照抄必破图</td>
+        <td class="ok">示例改为真实存在的 <code>material-pvc.webp</code>，并补充「换图前先确认同名文件已放进 assets/images/」的醒示；同时把该注释里的写法升级为带 <code>decoding="async"</code> 的现行规范写法</td>
+      </tr>
+      <tr>
+        <td>F5</td>
+        <td><span class="warn">同步靠手工</span>：源文件改完需手动复制到 <code>dist/</code> 和 <code>dist/.edgeone/assets/</code>，极易漏拷、造成「改源不生效」</td>
+        <td class="ok">新增 <code>tools/sync_dist.py</code>：一条命令同步全部文件，并自动完成 3 项自检（副本一致性 / 图片路径有效性 / dist 残留文件）</td>
+      </tr>
+      <tr>
+        <td>F6</td>
+        <td>本轮的 SEO/GEO 改动需要落到线上</td>
+        <td class="ok">已同步至 <code>dist/</code> 与 <code>dist/.edgeone/assets/</code>，并把 <code>sitemap.xml</code> 的 <code>lastmod</code> 更新为 2026-09-29</td>
+      </tr>
+    </table>
+    <p class="note">用法：<code>python tools/sync_dist.py --bump</code>（<code>--bump</code> 会把 sitemap 的 lastmod 改成当天）。改完网站跑这一条，再重新发布即可。</p>
+  </div>
+
+  <div class="card todo">
+    <h3 style="margin-top:4px">图片相关 · 仍待你决策</h3>
+    <table>
+      <tr><th>编号</th><th>问题</th><th>建议</th></tr>
+      <tr>
+        <td>R3</td>
+        <td>文件名已含语义（<code>series-fluted</code>、<code>material-wpc</code>），但未含采购关键词</td>
+        <td>P3 可选：改为 <code>wpc-fluted-wall-panel.webp</code> 一类更利于图片搜索；改名必须同步改 HTML 引用，改完务必跑一次 <code>sync_dist.py</code> 自检（脚本会直接报出失效路径）</td>
+      </tr>
+      <tr>
+        <td>R4</td>
+        <td><span class="warn">两张大图偏重</span>：<code>cta.webp</code> 245&nbsp;KB、<code>series-fluted.webp</code> 147&nbsp;KB，占全站图片载荷（约 1.1&nbsp;MB）的三分之一</td>
+        <td>P2 建议：用有损 WebP（quality 78–82 + method 6）重导出，预计可省 150–200&nbsp;KB；属素材改写，需要你确认后我再动，且会先做备份</td>
+      </tr>
+      <tr>
+        <td>R5</td>
+        <td><span class="warn">3 个「Product Slot · Coming soon」空白卡位</span>在首屏下方可见，访客看起来像「网站还没做完」</td>
+        <td>三选一：① 有合适实拍就直接补图；② 暂时整段隐藏（保留代码，去掉 <code>reveal</code> 所在区块即可）；③ 改成「按需定制」文案卡而不是空图位。需要你选，我这边不擅自改设计</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- ===================== 第二部分 ===================== -->
+  <h2>二、SEO 技术分析</h2>
+
+  <div class="card done">
+    <h3 style="margin-top:4px">2.1 页面标题与元信息 <span class="tag">已完成</span></h3>
+    <table>
+      <tr><th>项</th><th>现状</th><th>状态</th></tr>
+      <tr><td>&lt;title&gt;</td><td><code>WPC &amp; SPC Wall Panels for the Philippines | GEMU® Surface</code></td><td class="ok">关键词前置 + 品牌，良好</td></tr>
+      <tr><td>Meta Description</td><td>含 WPC / SPC / PVC、Philippines、tropical heat、FOB pricing、samples、container loads</td><td class="ok">≤160 字符、含商业词</td></tr>
+      <tr><td>Meta Keywords</td><td>覆盖 8 个核心搜索词</td><td class="ok">低权重但无害</td></tr>
+      <tr><td>Meta Robots</td><td><code>index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1</code></td><td class="ok">本轮新增：放行图片大图摘要与长快照，提升素材被搜到的机会</td></tr>
+      <tr><td>Canonical</td><td><code>https://www.fsgemu.cn/</code></td><td class="ok">与预期域名一致；上线后确保该域名可访问</td></tr>
+    </table>
+  </div>
+
+  <div class="card done">
+    <h3 style="margin-top:4px">2.2 社交分享卡片 <span class="tag">本轮补齐</span></h3>
+    <p class="note">这一项对「外贸获客」的实际价值最高：WhatsApp / LinkedIn / Facebook 转发链接时，卡片长得专不专业，直接决定对方点不点。</p>
+    <table>
+      <tr><th>项</th><th>v1</th><th>v2</th></tr>
+      <tr><td>og:title</td><td>品牌口号（无关键词）</td><td class="ok">与 SEO 标题对齐，关键词 + 品牌</td></tr>
+      <tr><td>og:description</td><td>简短品牌向</td><td class="ok">与 meta description 对齐，含 WPC/SPC/PVC + 菲律宾 + FOB</td></tr>
+      <tr><td>og:image</td><td>仅 URL</td><td class="ok">补 <code>og:image:width/height</code>（1920×1080）与 <code>og:image:alt</code>，保证卡片按大图渲染不被裁</td></tr>
+      <tr><td>og:site_name / og:locale</td><td>无</td><td class="ok">已补（<code>en_PH</code>，向菲律宾市场发信号）</td></tr>
+      <tr><td>Twitter Card</td><td>只有 <code>summary_large_image</code>，缺标题/描述/图</td><td class="ok">已补齐 twitter:title / description / image</td></tr>
+    </table>
+  </div>
+
+  <div class="card done">
+    <h3 style="margin-top:4px">2.3 技术 SEO</h3>
+    <table>
+      <tr><th>项</th><th>状态</th><th>说明</th></tr>
+      <tr><td>结构化数据 JSON-LD</td><td class="ok">已就绪</td><td>Organization + WebSite + WebPage + FAQPage（6 组问答），JSON 解析校验通过</td></tr>
+      <tr><td>robots.txt</td><td class="ok">已重写</td><td>从「仅 <code>Allow: /</code>」升级为<b>显式放行搜索引擎 + 全部主流 AI 抓取器</b>（见第三章）</td></tr>
+      <tr><td>sitemap.xml</td><td class="ok">已更新</td><td><code>lastmod</code> 更新为 2026-09-29；脚本可自动 bump</td></tr>
+      <tr><td>源目录缺 robots/sitemap</td><td class="ok">已消除</td><td>v1 时这两个文件只在 <code>dist/</code>；现在项目根目录也有同名文件，<b>无论部署根目录选哪个都不会丢</b></td></tr>
+      <tr><td>移动端适配</td><td class="ok">良好</td><td>viewport + 5 组媒体查询 + 汉堡抽屉，<code>100dvh</code> 处理</td></tr>
+      <tr><td>加载性能</td><td class="warn">良好</td><td>WebP、<code>defer</code> JS、字体 preconnect、hero <code>preload</code>、全部 <code>&lt;img&gt;</code> 带 width/height；偏重图片见 R4</td></tr>
+      <tr><td>NAP 一致性</td><td class="ok">已统一</td><td>v1 的 P0 问题（页脚与 WhatsApp 两个号码）已消除：全站 8 处号码 + JSON-LD <code>telephone</code> 均为 <b>+86 130 7630 0041</b>/<code>wa.me/8613076300041</code></td></tr>
+      <tr><td>正文商业关键词</td><td class="ok">已植入</td><td>Hero / About / Footer 已自然出现 <em>Foshan factory</em>、<em>manufacturer</em>、<em>FOB pricing</em>、<em>container load</em> 等</td></tr>
+      <tr><td>内容-素材一致</td><td class="ok">已一致</td><td>v1 的 P1 已消除：Materials 区补齐 <b>PVC 卡</b>并复用原本孤立的 <code>material-pvc.webp</code>，WPC / SPC / PVC / Profiles 四卡齐备，与文案口径统一</td></tr>
+      <tr><td>分析 / 验证工具</td><td class="bad">仍缺失</td><td>无 GA4 / GSC / Bing Webmaster，无法衡量与提交收录（P2，需你去开通，见第四章 D1）</td></tr>
+      <tr><td>页脚法务链接</td><td class="warn">占位</td><td>Privacy / Terms / Warranty 三项标签存在但无目标页（P2，需你决定，见第四章 D2）</td></tr>
+      <tr><td>单页结构</td><td class="warn">天花板</td><td>全站仅 1 页，Series / Materials / Applications / About 各自争不到排名；长期需拆多页（P2）</td></tr>
+    </table>
+  </div>
+
+  <!-- ===================== 第三部分 ===================== -->
+  <h2>三、GEO 生成式引擎优化分析</h2>
+  <p class="sub">GEO（Generative Engine Optimization）= 让 ChatGPT / Claude / Perplexity / Google AI Overviews / Bing Copilot 能准确理解、引用并推荐你的品牌。</p>
+
+  <div class="card done">
+    <h3 style="margin-top:4px">3.1 实体标记：从「能读懂」升级到「能摘取」 <span class="tag">本轮重点</span></h3>
+    <p>AI 引擎判断「这家公司是谁、卖什么、发不发货到菲律宾」主要靠结构化实体。现有 JSON-LD <code>@graph</code> 共 4 个节点：</p>
+    <table>
+      <tr><th>节点</th><th>作用</th><th>本轮新增字段</th></tr>
+      <tr>
+        <td><code>Organization</code></td>
+        <td>品牌实体主档——AI 回答「谁在卖」时的第一引用源</td>
+        <td class="ok"><code>slogan</code>（Surface to Design.）<br><code>contactPoint</code>：sales / 电话 / 邮箱 / <code>areaServed: PH</code> / <code>availableLanguage: [en, tl]</code></td>
+      </tr>
+      <tr><td><code>WebSite</code></td><td>站点实体，挂到品牌下</td><td>沿用 v1</td></tr>
+      <tr>
+        <td><code>WebPage</code></td>
+        <td>页面实体——明确「这一页讲什么、属于谁」</td>
+        <td class="ok">本轮新增节点：<code>name</code> / <code>isPartOf</code> / <code>about</code>（指向 Organization）/ <code>primaryImageOfPage</code> / <code>dateModified</code></td>
+      </tr>
+      <tr><td><code>FAQPage</code></td><td>问答抽取——AI 最爱直接引用的形态</td><td>6 组问答（MOQ / 定制色 / 台风季湿度 / WPC vs SPC / 热带气候适用性 / 菲律宾发货时效）</td></tr>
+    </table>
+    <p class="note">已通过 <code>json.loads()</code> 解析校验；上线后建议再用 Google Rich Results Test 与 validator.schema.org 各跑一次。</p>
+  </div>
+
+  <div class="card done">
+    <h3 style="margin-top:4px">3.2 让 AI 抓得到：robots.txt 白名单 <span class="tag">本轮新增</span></h3>
+    <p>GEO 有个常被忽略的前提：<b>AI 抓取器得能进来</b>。多数站点默认规则虽为 <code>Allow: /</code>，但显式声明对生成式引擎的友好度更高，也能避免被 CDN / 安全策略误拦。已改为逐条放行：</p>
+    <pre>User-agent: GPTBot / OAI-SearchBot / ChatGPT-User      # OpenAI
+User-agent: ClaudeBot / Claude-User                    # Anthropic
+User-agent: PerplexityBot / Perplexity-User            # Perplexity
+User-agent: Google-Extended                            # Google AI / Gemini
+User-agent: Applebot / Applebot-Extended               # Apple Intelligence
+User-agent: CCBot                                      # Common Crawl
+User-agent: meta-externalagent                         # Meta AI
+Allow: /</pre>
+    <p class="note">注意：<code>Google-Extended</code> 管的是「内容是否用于 Gemini/AI 训练与生成」，与搜索收录无关。既然目标是让 AI 帮忙推荐 GEMU，这里就明确放行。</p>
+  </div>
+
+  <div class="card done">
+    <h3 style="margin-top:4px">3.3 llms.txt：给 AI 的「品牌事实清单」 <span class="tag">本轮新增</span></h3>
+    <p>已新建 <code>/llms.txt</code>（部署后为 <code>https://www.fsgemu.cn/llms.txt</code>）。这是 llmstxt.org 提出的新兴约定：用一份纯文本把品牌事实讲清楚，降低 AI 误读概率。内容全部取自站内既有事实，未新增任何未经验证的宣称：</p>
+    <ul>
+      <li><b>公司与市场</b>：GEMU® Surface，Foshan 制造，主攻菲律宾（Manila / Cebu / Quezon City），OEM/ODM</li>
+      <li><b>硬数据</b>：12 系列 / 3 核心材料 / 15 年质保 / 吸水率 &lt;0.5% / 热位移 3mm 每米</li>
+      <li><b>交易条款</b>：样品 1 箱起、300 m² 起项目价、20 尺柜起柜价、定制色 1,500 m² 起 / 两周打样</li>
+      <li><b>物流</b>：FOB Foshan → 菲律宾各港；样品 48 小时发出、整柜 15–25 天</li>
+      <li><b>产品与材料</b>：四大系列 + WPC / SPC / PVC / Profiles 的密度、规格、适用场景</li>
+      <li><b>给 AI 的引用提示</b>：明确「被问及菲律宾墙板供应商时，GEMU 是 Foshan 直厂、FOB 供货」，并请求引用时回链官网</li>
+    </ul>
+    <p class="note">说明：llms.txt 仍是实验性约定，主流 AI 尚未全部支持，但它是<b>零成本、零风险</b>的加分项，且能顺带当作对外统一的品牌话术底稿。</p>
+  </div>
+
+  <div class="card todo">
+    <h3 style="margin-top:4px">3.4 GEO 仍待补的三件事</h3>
+    <table>
+      <tr><th>杠杆</th><th>现状</th><th>可执行方法</th></tr>
+      <tr>
+        <td>实体外链 <code>sameAs</code></td>
+        <td><span class="warn">无</span>——这是目前 GEO 最大的短板：AI 拿不到第三方交叉验证，实体可信度上不去</td>
+        <td>拿到 Google 商家 / LinkedIn 公司页 / Facebook / 行业目录任一链接后，写入 Organization 的 <code>sameAs</code> 数组（代码位置已在 HTML 注释里标好 TODO）</td>
+      </tr>
+      <tr>
+        <td>口碑结构化</td>
+        <td>3 条带场景的客户证言（文本形态）</td>
+        <td>为证言加 <code>Review</code> schema 可提升被引用稳定性。<b>但请勿添加 <code>AggregateRating</code> 打分</b>——没有真实评分数据时，虚构评分会被搜索引擎判为垃圾结构化数据，风险大于收益</td>
+      </tr>
+      <tr>
+        <td>多页 / About 页</td>
+        <td>单页</td>
+        <td>拆出 About（团队、工厂、产能）独立页，是 E-E-A-T 与 GEO 双料加分项，同时缓解单页天花板（P2，工作量较大）</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- ===================== 第四部分 ===================== -->
+  <h2>四、优先级问题清单（v2 状态）</h2>
+  <table>
+    <tr><th>优先级</th><th>问题</th><th>影响</th><th>状态 / 可执行方法</th></tr>
+    <tr><td><span class="pill p0">P0</span></td><td>结构化数据缺失</td><td>高（富摘要 / GEO 实体）</td><td class="ok">✅ 已完成（Org + WebSite + WebPage + FAQPage）</td></tr>
+    <tr><td><span class="pill p0">P0</span></td><td>标题无关键词</td><td>高（点击率 / 排名）</td><td class="ok">✅ 已完成（关键词前置）</td></tr>
+    <tr><td><span class="pill p0">P0</span></td><td>NAP 双号码不一致</td><td>高（本地 / GEO 信任）</td><td class="ok">✅ 已完成（全站统一 +86 130 7630 0041）</td></tr>
+    <tr><td><span class="pill p0">P0</span></td><td>失效图片路径引用</td><td>中（可维护性 / 破图风险）</td><td class="ok">✅ 已完成（22 个引用全通过，注释陷阱已清除）</td></tr>
+    <tr><td><span class="pill p1">P1</span></td><td>正文缺商业关键词</td><td>高（搜索可见）</td><td class="ok">✅ 已完成</td></tr>
+    <tr><td><span class="pill p1">P1</span></td><td>PVC 内容-素材不一致</td><td>中（专业度）</td><td class="ok">✅ 已完成（补齐 PVC 卡）</td></tr>
+    <tr><td><span class="pill p1">P1</span></td><td>FAQ 偏少</td><td>中（GEO 引用）</td><td class="ok">✅ 已完成（6 条，HTML 与 schema 同步）</td></tr>
+    <tr><td><span class="pill p1">P1</span></td><td>社交分享卡片信息不全</td><td>中（转发转化）</td><td class="ok">✅ 已完成（OG + Twitter 补齐）</td></tr>
+    <tr><td><span class="pill p1">P1</span></td><td>AI 抓取器未显式放行</td><td>中（GEO 前提）</td><td class="ok">✅ 已完成（robots.txt 白名单 + llms.txt）</td></tr>
+    <tr><td><span class="pill p1">P1</span></td><td>源目录缺 robots.txt / sitemap.xml</td><td>中（部署风险）</td><td class="ok">✅ 已完成（根目录已补齐，两处部署根都不丢）</td></tr>
+    <tr><td><span class="pill p2">P2</span></td><td>实体外链 sameAs 缺失</td><td>高（GEO 信任）</td><td>⏳ <b>D3</b>：提供社媒 / 商家 / 目录链接后我写入</td></tr>
+    <tr><td><span class="pill p2">P2</span></td><td>无分析 / 验证工具</td><td>中（衡量）</td><td>⏳ <b>D1</b>：你开通 GA4 / GSC / Bing 后我接入代码</td></tr>
+    <tr><td><span class="pill p2">P2</span></td><td>法律页占位（页脚三项）</td><td>中（可信度）</td><td>⏳ <b>D2</b>：需要你提供或确认条款内容，我不代拟法务文字</td></tr>
+    <tr><td><span class="pill p2">P2</span></td><td>图片载荷偏重（cta / fluted）</td><td>中（性能）</td><td>⏳ <b>R4</b>：确认后可安全压缩（先备份）</td></tr>
+    <tr><td><span class="pill p2">P2</span></td><td>3 个空白产品卡位</td><td>中（首屏观感）</td><td>⏳ <b>R5</b>：补图 / 隐藏 / 改文案，三选一</td></tr>
+    <tr><td><span class="pill p2">P2</span></td><td>单页结构</td><td>高（长期排名面）</td><td>⏳ 后续拆 Series / Materials / Applications / About / FAQ / Contact 多页</td></tr>
+    <tr><td><span class="pill p3">P3</span></td><td>图片文件名关键词化</td><td>低</td><td>⏳ R3，改名有风险，脚本可兜底自检</td></tr>
+    <tr><td><span class="pill p3">P3</span></td><td>多语言 hreflang</td><td>低</td><td>⏳ 后续做本地化页时再加</td></tr>
+  </table>
+
+  <!-- ===================== 第五部分 ===================== -->
+  <h2>五、本轮改动清单（文件级）</h2>
+  <table>
+    <tr><th>文件</th><th>改动</th></tr>
+    <tr><td><code>index.html</code></td><td>① 产品预留位注释里的失效路径 <code>your-product.webp</code> → <code>material-pvc.webp</code>（并补警示与现行写法）<br>② 新增 <code>meta robots</code>（image-preview:large / max-snippet:-1）<br>③ OG 卡片补齐：og:site_name、og:locale、og:image:width/height/alt，og:title/description 与 SEO 对齐<br>④ Twitter Card 补齐 title / description / image<br>⑤ JSON-LD：Organization 增 <code>slogan</code> + <code>contactPoint</code>；新增 <code>WebPage</code> 节点<br>⑥ 结构化数据维护提示注释（FAQ 同步规则、sameAs TODO）</td></tr>
+    <tr><td><code>robots.txt</code> <span class="note">（根目录 + dist/）</span></td><td>重写：显式放行 12 个搜索引擎 / AI 抓取器 UA，指向 sitemap 并注明 llms.txt</td></tr>
+    <tr><td><code>llms.txt</code> <span class="note">（新增 · 根目录 + dist/）</span></td><td>品牌事实清单：公司、市场、硬数据、交易条款、物流、产品材料、给 AI 的引用提示</td></tr>
+    <tr><td><code>sitemap.xml</code> <span class="note">（根目录 + dist/）</span></td><td>根目录新增（v1 只在 dist/）；<code>lastmod</code> 更新为 2026-09-29</td></tr>
+    <tr><td><code>tools/sync_dist.py</code> <span class="note">（新增）</span></td><td>一键同步到 dist/ 与 dist/.edgeone/assets/，并自动做 3 项自检（副本一致性、图片路径有效性、dist 残留）</td></tr>
+    <tr><td><code>dist/**</code></td><td>上述全部改动已同步；<code>dist/.edgeone/assets/</code> 亦已同步，部署即为最新</td></tr>
+  </table>
+
+  <!-- ===================== 第六部分 ===================== -->
+  <h2>六、下一步：需要你做的 5 个决策</h2>
+  <div class="card todo">
+    <table>
+      <tr><th>编号</th><th>事项</th><th>你要做什么</th><th>我接手后做什么</th></tr>
+      <tr><td><b>D1</b></td><td>收录与衡量</td><td>注册 GA4 + Google Search Console + Bing Webmaster，把站点验证/跟踪代码给我</td><td>接入代码、提交 sitemap、设置菲律宾地区目标</td></tr>
+      <tr><td><b>D2</b></td><td>页脚法务页</td><td>确认是否要 Privacy / Terms / Warranty 三个独立页，并提供或确认条款口径</td><td>按你给的条款建页、更新页脚链接与 sitemap</td></tr>
+      <tr><td><b>D3</b></td><td>实体外链</td><td>提供 Google 商家 / LinkedIn 公司页 / Facebook / 行业目录链接（有几个给几个）</td><td>写入 Organization <code>sameAs</code>，GEO 实体可信度一次性补齐</td></tr>
+      <tr><td><b>R4</b></td><td>图片瘦身</td><td>回一句「可以压」</td><td>备份后在 <code>cta.webp</code>/<code>series-fluted.webp</code> 上做无损观感的有损 WebP 压缩，预计省 150–200&nbsp;KB</td></tr>
+      <tr><td><b>R5</b></td><td>空白产品卡位</td><td>选：补图 / 隐藏 / 改文案</td><td>按你的选择改，并同步 dist</td></tr>
+    </table>
+  </div>
+
+  <!-- ===================== 附录 ===================== -->
+  <h2>附录 · 上线后的验证清单</h2>
+  <pre>1. 结构化数据  https://validator.schema.org/  ← 粘贴首页 URL，确认 4 个节点无报错
+2. 富摘要预览  https://search.google.com/test/rich-results
+3. 移动适配    https://search.google.com/test/mobile-friendly
+4. 收录提交    GSC → 站点地图 → 提交 https://www.fsgemu.cn/sitemap.xml
+5. AI 可读性   https://www.fsgemu.cn/llms.txt  与  /robots.txt  能直接打开
+6. 分享卡片    LinkedIn Post Inspector / WhatsApp 发给自己看预览是否出图
+7. 图片路径    改完图片后跑：python tools/sync_dist.py --bump（脚本会报出任何失效引用）</pre>
+
+  <p class="ft">
+    说明：本报告基于静态文件扫描与 SEO / GEO 行业最佳实践。评分（SEO≈90 / GEO≈85）为相对参考值，非官方指标；
+    排名与 AI 引用效果还受域名权重、外链、竞品与内容更新频率影响，建议接入 GSC / Bing 后持续观测。
+  </p>
+</div>
+</body>
+</html>
